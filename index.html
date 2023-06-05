@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auxilium Group Status Board</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/service.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <section class="statusboard">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Status</th>
+                <th>Signal</th>
+                <th>Uptime</th>
+            </tr>
+            <tr>
+                <td>Our Training Room</td>
+                <td id="otr_status">Checking... </td>
+                <td><div id="otr_blinker" class="blinker status_pending"> </div></td>
+              </tr>
+              <tr>
+                <td>Datalynk</td>
+                <td id="datalynk_status">Checking... </td>
+                <td><div id="datalynk_blinker" class="blinker status_pending"> </div></td>
+              </tr>
+              <tr>
+                <td>API Services</td>
+                <td id="api_status">Checking... </td>
+                <td><div id="api_blinker" class="blinker status_pending"> </div></td>
+              </tr>              
+        </table>
+    </section>
+
+  </body>
+</html>
